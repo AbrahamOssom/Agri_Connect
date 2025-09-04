@@ -1,0 +1,71 @@
+{
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.1"
+        },
+        "login/login.php": {
+            "runtime": "vercel-php@0.7.1"
+        },
+        "login/register.php": {
+            "runtime": "vercel-php@0.7.1"
+        },
+        "login/connect.php": {
+            "runtime": "vercel-php@0.7.1"
+        },
+        "searchbar/search.php": {
+            "runtime": "vercel-php@0.7.1"
+        },
+        "searchbar/dbh.php": {
+            "runtime": "vercel-php@0.7.1"
+        },
+        "newsletter/subscribe.php": {
+            "runtime": "vercel-php@0.7.1"
+        }
+    },
+    "routes": [
+        {
+            "src": "/index.php",
+            "dest": "/index.php"
+        },
+        {
+            "src": "/login/login.php",
+            "dest": "/login/login.php"
+        },
+        {
+            "src": "/login/register.php",
+            "dest": "/login/register.php"
+        },
+        {
+            "src": "/login/connect.php",
+            "dest": "/login/connect.php"
+        },
+        {
+            "src": "/searchbar/search.php",
+            "dest": "/searchbar/search.php"
+        },
+        {
+            "src": "/searchbar/dbh.php",
+            "dest": "/searchbar/dbh.php"
+        },
+        {
+            "src": "/newsletter/subscribe.php",
+            "dest": "/newsletter/subscribe.php"
+        },
+        {
+            "src": "/style.css",
+            "dest": "/public/style.css"
+        },
+        {
+            "src": "/assets/img/(.*).png",
+            "dest": "/public/assets/img/$1"
+        },
+        {
+            "src": "/assets/datas/data.json",
+            "dest": "/public/assets/datas/data.json"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/main/main.html"
+        }
+    ]
+}
