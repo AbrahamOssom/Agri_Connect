@@ -11,6 +11,12 @@
   transition: 0.2s linear;
 }
 
+/* Add this to your main.css or homepage CSS file */
+img {
+  filter: blur(2px) brightness(0.9);
+  opacity: 0.8;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -459,6 +465,36 @@ section {
   color: #219150;
 }
 
+@media (max-width: 768px) {
+  .footer .box-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .footer .box {
+    flex: 1 1 120px;
+    min-width: 120px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .footer .box h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0 0.5rem 0;
+  }
+  .footer .box a {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+  .footer .credit {
+    position: static;
+    transform: none;
+    padding: 1.5rem 0 0 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+  }
+}
 @media (max-width: 1200) {
   .header {
     padding: 2rem;
